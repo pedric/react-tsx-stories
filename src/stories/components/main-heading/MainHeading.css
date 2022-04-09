@@ -1,0 +1,13 @@
+.main-heading {
+	font-family: inherit;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.main-heading--small {
+	font-size: 1.75rem;
+}
+
+.main-heading--large {
+	font-size: 3rem;
+}
