@@ -16,28 +16,26 @@ const Template: ComponentStory<typeof MainHeading> = (args) => (
 	<MainHeading {...args} />
 );
 
-const content: string = 'Cyberkrigarna som strider mot Putin';
-const color: string = '#000';
+// const content: string = 'Lorem ipsum sit amet';
+// const color: string = '#000';
 
 export const Primary = Template.bind({});
 Primary.args = {
-	content,
-	color,
 	fontFamily: 'Inter',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-	content,
-	color,
-	size: 'large',
-	fontFamily: 'Inter',
-};
+// export const Large = Template.bind({});
+// Large.args = {
+// 	// content,
+// 	// color,
+// 	size: 'large',
+// 	fontFamily: 'Inter',
+// };
 
-export const Small = Template.bind({});
-Small.args = {
-	content,
-	color,
-	size: 'small',
-	fontFamily: 'Inter',
-};
+// export const Small = Template.bind({});
+// Small.args = {
+// 	// content,
+// 	// color,
+// 	size: 'small',
+// 	fontFamily: 'Inter',
+// };

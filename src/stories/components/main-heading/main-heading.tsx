@@ -11,8 +11,8 @@ interface MainHeadingProps {
 
 export const MainHeading = ({
 	size = 'medium',
-	color,
-	content,
+	color = '#000',
+	content = `Lorem ipsum sit amet – It's also called placeholder`,
 	fontFamily = 'Inter',
 	...props
 }: MainHeadingProps) => (
@@ -26,5 +26,3 @@ export const MainHeading = ({
 		</h1>
 	</div>
 );
-
-// export default MainHeading;

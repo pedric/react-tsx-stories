@@ -3,7 +3,7 @@ import '../../styles/global.css';
 import './paragraph.css';
 
 interface ParagraphProps {
-	paragraphs: string[];
+	paragraphs?: string[];
 	fontFamily?: 'Inter' | 'Barlow' | 'Open sans' | 'Roboto' | 'Poppins';
 	color?: string;
 }
@@ -16,7 +16,9 @@ export const Paragraph = ({
 	return (
 		<div style={{ color, fontFamily }}>
 			{paragraphs &&
-				paragraphs.map((p) => <p dangerouslySetInnerHTML={{ __html: p }}></p>)}
+				paragraphs.map((p, idx) => (
+					<p key={idx} dangerouslySetInnerHTML={{ __html: p }}></p>
+				))}
 		</div>
 	);
 };
