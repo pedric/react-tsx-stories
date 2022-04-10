@@ -18,3 +18,12 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.full-article {
+	max-width: 730px;
+	margin: 0 auto 0 0;
+}
+
+.full-article.full-article--center {
+	margin: 0 auto;
+}

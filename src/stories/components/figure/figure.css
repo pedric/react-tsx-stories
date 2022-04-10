@@ -1,10 +1,12 @@
 .figure {
 	font-family: 'Inter', sans-serif;
 	max-width: 630px;
+	margin: 0 auto 0 0;
 }
 
 .figure__button {
-	transition: all 1000ms linear;
+	background: rgba(255, 255, 255, 0);
+	/* transition: all 3000ms linear; */
 }
 
 .figure__button[data-focused='false'] {
@@ -13,12 +15,16 @@
 
 .figure__button[data-focused='true'] {
 	cursor: zoom-out;
-	background: rgba(0, 0, 0, 0.312);
+	/* background: rgba(0, 0, 0, 0.33); */
+	/* background: rgba(0, 0, 0, 0.9); */
+	/* background: rgba(0, 0, 0, 0.9); */
+	background: rgba(255, 255, 255, 0.9);
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	/* transition: all 100ms linear; */
 }
 
 .figure__image {
@@ -31,6 +37,9 @@
 
 @keyframes fade-in-figure {
 	0% {
+		opacity: 0;
+	}
+	10% {
 		opacity: 0;
 	}
 	100% {
@@ -47,8 +56,8 @@
 	transform: translate3d(-50%, -50%, 10px);
 	max-height: 90vh;
 	object-fit: contain;
-	animation: fade-in-figure 1000ms forwards;
-	transition: all 350ms linear;
+	animation: fade-in-figure 2000ms forwards;
+	transition: all 250ms linear;
 }
 
 .figure__caption {
