@@ -1,6 +1,6 @@
 .figure {
-	font-family: 'Inter', sans-serif;
-	max-width: 630px;
+	font-family: inherit;
+	max-width: 730px;
 	margin: 0 auto 0 0;
 }
 
@@ -50,14 +50,14 @@
 .figure[data-focused='true'] .figure__image {
 	position: absolute;
 	width: 90%;
-	max-width: 730px;
+	max-width: 830px;
 	top: 50%;
 	left: 50%;
 	transform: translate3d(-50%, -50%, 10px);
 	max-height: 90vh;
 	object-fit: contain;
-	animation: fade-in-figure 2000ms forwards;
-	transition: all 250ms linear;
+	/* animation: fade-in-figure 2000ms forwards;
+	transition: all 250ms linear; */
 }
 
 .figure__caption {

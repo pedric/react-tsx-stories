@@ -6,14 +6,21 @@ interface MainHeadingProps {
 	size?: 'small' | 'medium' | 'large';
 	color?: string;
 	content?: string;
-	fontFamily?: 'Inter' | 'Barlow' | 'Open sans' | 'Roboto' | 'Poppins';
+	fontFamily?:
+		| 'Inter'
+		| 'Barlow'
+		| 'Open sans'
+		| 'Roboto'
+		| 'Poppins'
+		| 'EB Garamond'
+		| 'Libre Baskerville';
 }
 
 export const MainHeading = ({
 	size = 'medium',
 	color = '#000',
 	content = `Lorem ipsum sit amet – It's also called placeholder`,
-	fontFamily = 'Inter',
+	fontFamily,
 	...props
 }: MainHeadingProps) => (
 	<div style={{ fontFamily }}>

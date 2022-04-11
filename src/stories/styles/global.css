@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -21,9 +21,14 @@ body {
 
 .full-article {
 	max-width: 730px;
-	margin: 0 auto 0 0;
+	margin: 1rem auto 0 0;
 }
 
 .full-article.full-article--center {
 	margin: 0 auto;
+}
+
+.full-article .paragraphs {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }

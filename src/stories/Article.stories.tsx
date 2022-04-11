@@ -8,11 +8,11 @@ export default {
 	component: Article,
 } as ComponentMeta<typeof Article>;
 
-const Template: ComponentStory<typeof Article> = (args) => <Article />;
+const Template: ComponentStory<typeof Article> = (args) => (
+	<Article {...args} />
+);
 
 export const Default = Template.bind({});
-// Default.args = {
-// 	content,
-// 	fontFamily: 'Inter',
-// 	color: '#000',
-// };
+Default.args = {
+	fontFamily: 'Inter',
+};

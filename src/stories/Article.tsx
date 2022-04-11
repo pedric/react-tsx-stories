@@ -4,9 +4,26 @@ import { Preamble } from './components/preamble/preamble';
 import { Paragraph } from './components/paragraph/paragraph';
 import paragraphs from './components/paragraph/exampleData';
 import { Figure } from './components/figure/Figure';
+import { ArticleMeta } from './components/article-meta/ArticleMeta';
 import placeHolderLandscape from './assets/sora-sagano-tlCzX-8iwx4-unsplash.jpg';
 
-export const Article = () => {
+interface ArticleProps {
+	fontFamily?:
+		| 'Inter'
+		| 'Barlow'
+		| 'Open sans'
+		| 'Roboto'
+		| 'Poppins'
+		| 'EB Garamond'
+		| 'Libre Baskerville';
+	color?: string;
+}
+
+export const Article = ({
+	fontFamily,
+	color = '#000',
+	...props
+}: ArticleProps) => {
 	const image = {
 		src: placeHolderLandscape,
 		alt: 'Photo of mountain',
@@ -14,11 +31,16 @@ export const Article = () => {
 		height: 1081,
 	};
 	return (
-		<article className='full-article full-article--center'>
-			<MainHeading />
-			<Preamble />
+		<article
+			className='full-article full-article--center'
+			style={{ fontFamily }}
+			{...props}
+		>
+			<ArticleMeta color={color} />
+			<MainHeading fontFamily={fontFamily} />
+			<Preamble fontFamily={fontFamily} />
 			<Figure image={image} />
-			<Paragraph paragraphs={paragraphs} />
+			<Paragraph fontFamily={fontFamily} paragraphs={paragraphs} />
 		</article>
 	);
 };
