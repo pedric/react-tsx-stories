@@ -1,0 +1,24 @@
+.btn.btn--color {
+	display: inline-block;
+	padding: 2px;
+	border-radius: 9999px;
+	margin: 0 0.5rem 0.5rem 0;
+	transform: translate3d(0, 0, 0);
+	transition: transform 250ms linear;
+	will-change: transform;
+}
+
+.btn.btn--color:hover {
+	cursor: pointer;
+	transform: translate3d(0.5rem, 0, 0);
+}
+
+.btn.btn--color > a {
+	display: inline-block;
+	padding: 0.35rem 1rem;
+	border-radius: 9999px;
+	font-family: sans-serif;
+	text-decoration: none;
+	/* text-transform: uppercase; */
+	letter-spacing: 1px;
+}

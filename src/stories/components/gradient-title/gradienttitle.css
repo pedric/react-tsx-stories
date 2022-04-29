@@ -1,0 +1,44 @@
+div.gradient-title {
+	/**/
+}
+
+div.gradient-title h1 {
+	position: relative;
+}
+
+div.gradient-title h1 span.gradient {
+	background: linear-gradient(
+		45deg,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+div.gradient-title h1 span.ghost {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: blink 10s linear infinite;
+}
